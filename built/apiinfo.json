@@ -1,0 +1,207 @@
+{
+ "byQName": {
+  "SGBotic": {
+   "kind": 5,
+   "namespace": "",
+   "name": "SGBotic",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "weight": 100,
+    "color": "#f47820",
+    "icon": "",
+    "paramHelp": {},
+    "jsDoc": "Makecode block for digital weighing scale\n\nSGBotic blocks",
+    "block": "SGBotic"
+   },
+   "pkg": null,
+   "retType": "",
+   "parameters": null,
+   "qName": "SGBotic"
+  },
+  "SGBotic.init_loadcell": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "init_loadcell",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "scale",
+    "color": "#66B2FF",
+    "blockId": "LoadCell_init",
+    "block": "set scale pins| SCK %pinSCK| DT %pinDT",
+    "weight": 100,
+    "blockExternalInputs": "true",
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Define pins that connect to load cell converter",
+    "_name": "init_loadcell"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "pinSCK",
+     "description": "",
+     "type": "DigitalPin",
+     "options": {},
+     "isEnum": true
+    },
+    {
+     "name": "pinDT",
+     "description": "",
+     "type": "DigitalPin",
+     "options": {},
+     "isEnum": true
+    }
+   ],
+   "snippet": "init_loadcell(null, null)",
+   "qName": "SGBotic.init_loadcell"
+  },
+  "SGBotic.loadCell_noLoad": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "loadCell_noLoad",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "scale",
+    "blockId": "LoadCell_noLoad",
+    "block": "read scale with no load",
+    "weight": 90,
+    "color": "#66B2FF",
+    "blockExternalInputs": "true",
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Read loadcell with no load",
+    "_name": "loadCell_noLoad"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [],
+   "snippet": "loadCell_noLoad()",
+   "qName": "SGBotic.loadCell_noLoad"
+  },
+  "SGBotic.read_grams": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "read_grams",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "scale",
+    "blockId": "LoadCell_ReadGrams",
+    "block": "read scale in grams",
+    "weight": 80,
+    "color": "#66B2FF",
+    "blockExternalInputs": "true",
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Read sensor value in grams",
+    "_name": "read_grams"
+   },
+   "pkg": null,
+   "retType": "number",
+   "parameters": [],
+   "snippet": "read_grams()",
+   "qName": "SGBotic.read_grams"
+  },
+  "SGBotic.cali_1kg": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "cali_1kg",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "scale",
+    "blockId": "LoadCell_cali1kg",
+    "block": "calibrate with 1kg load",
+    "weight": 80,
+    "color": "#66B2FF",
+    "blockExternalInputs": "true",
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Calibrate loadcell with 1kg load",
+    "_name": "cali_1kg"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [],
+   "snippet": "cali_1kg()",
+   "qName": "SGBotic.cali_1kg"
+  },
+  "SGBotic.cali_UserLoad": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "cali_UserLoad",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "scale",
+    "blockId": "LoadCell_caliUserLoad",
+    "block": "calibrate with %userLoad|g load",
+    "weight": 80,
+    "color": "#66B2FF",
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Calibrate loadcell with user defined load",
+    "_name": "cali_UserLoad"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "userLoad",
+     "description": "",
+     "type": "number",
+     "options": {},
+     "isEnum": false
+    }
+   ],
+   "snippet": "cali_UserLoad(0)",
+   "qName": "SGBotic.cali_UserLoad"
+  },
+  "SGBotic.getCountAverage": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "getCountAverage",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "getCountAverage"
+   },
+   "pkg": null,
+   "retType": "number",
+   "parameters": [],
+   "snippet": "getCountAverage()",
+   "qName": "SGBotic.getCountAverage"
+  },
+  "SGBotic.getCount": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "getCount",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "getCount"
+   },
+   "pkg": null,
+   "retType": "number",
+   "parameters": [],
+   "snippet": "getCount()",
+   "qName": "SGBotic.getCount"
+  }
+ }
+}

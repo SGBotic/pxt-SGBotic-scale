@@ -1,0 +1,5 @@
+{
+  "SGBotic.init_loadcell|block": "Initialize loadcell| connect DT to %pinDT| SCK to %pinSCK",
+  "SGBotic|block": "Load Cell",
+  "{id:category}SGBotic": "SGBotic"
+}

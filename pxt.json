@@ -1,0 +1,19 @@
+{
+    "name": "pxt-SGBotic-scale",
+    "version": "0.1",
+    "description": "Makdecode block for digital weighing scale",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "loadcell.ts",
+        "base.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}

@@ -1,0 +1,8 @@
+{
+  "SGBotic": "Makecode block for digital weighing scale\n\nSGBotic blocks",
+  "SGBotic.cali_1kg": "Calibrate loadcell with 1kg load",
+  "SGBotic.cali_UserLoad": "Calibrate loadcell with user defined load",
+  "SGBotic.init_loadcell": "Define pins that connect to load cell converter",
+  "SGBotic.loadCell_noLoad": "Read loadcell with no load",
+  "SGBotic.read_grams": "Read sensor value in grams"
+}

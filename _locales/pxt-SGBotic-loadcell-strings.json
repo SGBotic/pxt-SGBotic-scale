@@ -1,0 +1,9 @@
+{
+  "SGBotic.cali_1kg|block": "calibrate with 1kg load",
+  "SGBotic.cali_UserLoad|block": "calibrate with %userLoad|g load",
+  "SGBotic.init_loadcell|block": "set loadcell pins| SCK %pinSCK| DT %pinDT",
+  "SGBotic.loadCell_noLoad|block": "read loadcell with no load",
+  "SGBotic.read_grams|block": "read loadcell in grams",
+  "SGBotic|block": "SGBotic",
+  "{id:category}SGBotic": "SGBotic"
+}
