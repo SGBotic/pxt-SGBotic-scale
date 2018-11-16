@@ -58,7 +58,7 @@ namespace SGBotic {
         if (sensorValue < 0)
             sensorValue = 0
         
-        return sensorValue;
+        return Math.round(sensorValue);
     }
     
    
