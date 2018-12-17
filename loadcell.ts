@@ -25,13 +25,15 @@ namespace SGBotic {
         pinDTSel = pinDT
         pinSCKSel = pinSCK
         constant = constant5kg
+        
+        noloadValue = getCountAverage()
     }
     
     /**
     * Read loadcell with no load
     */
     //% subcategory=scale
-    //% blockId="LoadCell_noLoad" block="read scale with no load"
+    //% blockId="LoadCell_noLoad" block="read scale with zero load"
     //% weight=90 color=#66B2FF  blockExternalInputs=true blockGap=8
     export function loadCell_noLoad(): void {
       
